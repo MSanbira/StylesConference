@@ -97,27 +97,6 @@ grid
 }
 
 /*
-===================
-clearfix
-
-
-.group:before, .group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.group {
-    clear: both;
-    *zoom: 1;
-}
-===================
-*/
-
-/*
   ========================================
   Rows
   ========================================
@@ -399,6 +378,10 @@ p a {
     margin-bottom: 44px;
     display: flex;
     flex-flow: row wrap;
+}
+
+.speaker:last-child {
+    margin-bottom: 0;
 }
 
 .speaker-info img {
