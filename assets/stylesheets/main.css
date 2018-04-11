@@ -303,15 +303,21 @@ primary header
 */
 
 .primary-footer small {
-    float: left;
     font-weight: 400;
 }
 
 .primary-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding-top: 44px;
     padding-bottom: 44px;
     color: #648880;
     font-size: 14px;
+}
+
+.footer-flex {
+    display: flex;
 }
 
 /*
