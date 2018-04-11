@@ -99,8 +99,7 @@ grid
 /*
 ===================
 clearfix
-===================
-*/
+
 
 .group:before, .group:after {
     content: "";
@@ -115,6 +114,8 @@ clearfix
     clear: both;
     *zoom: 1;
 }
+===================
+*/
 
 /*
   ========================================
@@ -396,6 +397,8 @@ p a {
 
 .speaker {
     margin-bottom: 44px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .speaker-info img {
