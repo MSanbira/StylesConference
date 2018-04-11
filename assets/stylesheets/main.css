@@ -422,6 +422,11 @@ p a {
     margin-bottom: 22px;
 }
 
+.venue-theatre, .venue-hotel {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .venue-map {
     height: 264px;
 }
