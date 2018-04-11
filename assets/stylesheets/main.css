@@ -75,20 +75,25 @@ grid
 }
 
 .col-1-3 {
-    width: 33.33%;
+    flex-basis: 33.33%;
 }
 
 .col-2-3 {
-    width: 66.66%;
+    flex-basis: 66.66%;
 }
 
 .col-1-3, .col-2-3 {
-    float: left;
+    display: block;
 }
 
 .grid, .col-1-3, .col-2-3 {
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.primary-flex {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /*
