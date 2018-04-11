@@ -75,15 +75,15 @@ grid
 }
 
 .col-1-3 {
-    width: 33.33%;
+    flex-basis: 33.33%;
 }
 
 .col-2-3 {
-    width: 66.66%;
+    flex-basis: 66.66%;
 }
 
 .col-1-3, .col-2-3 {
-    float: left;
+    display: block;
 }
 
 .grid, .col-1-3, .col-2-3 {
@@ -91,11 +91,15 @@ grid
     padding-left: 15px;
 }
 
+.primary-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 /*
 ===================
 clearfix
-===================
-*/
+
 
 .group:before, .group:after {
     content: "";
@@ -110,6 +114,8 @@ clearfix
     clear: both;
     *zoom: 1;
 }
+===================
+*/
 
 /*
   ========================================
@@ -303,15 +309,21 @@ primary header
 */
 
 .primary-footer small {
-    float: left;
     font-weight: 400;
 }
 
 .primary-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding-top: 44px;
     padding-bottom: 44px;
     color: #648880;
     font-size: 14px;
+}
+
+.footer-flex {
+    display: flex;
 }
 
 /*
@@ -385,6 +397,8 @@ p a {
 
 .speaker {
     margin-bottom: 44px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .speaker-info img {
@@ -406,6 +420,11 @@ p a {
 
 .venue-hotel {
     margin-bottom: 22px;
+}
+
+.venue-theatre, .venue-hotel {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .venue-map {
