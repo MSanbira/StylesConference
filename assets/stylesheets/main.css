@@ -93,7 +93,7 @@ grid
 
 .primary-flex {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 /*
@@ -275,10 +275,6 @@ primary header
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
-
-.logo-flex {
-    display: flex;
 }
 
 /*
@@ -536,4 +532,57 @@ table h4 {
 
 .schedule-offset {
     color: #a9b2b9;
+}
+
+/*
+  ========================================
+  @media ???
+  ========================================
+*/
+
+@media (max-width: 400px) {
+    .primary-flex {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .container {
+        width: 400px;
+        padding-right: 15;
+        padding-left: 15;
+    }
+    .col-1-3 {
+        display: block;
+        flex-basis: 100%;
+    }
+    .row {
+        min-width: 0;
+        width: 400px;
+    }
+    .grid {
+        width: auto;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 8px;
+    }
+    .logo {
+        font-size: 42px;
+        text-align: center;
+        margin: 0;
+    }
+    .tagline {
+        margin: 15px 0 15px 0;
+        text-align: center;
+    }
+    .primary-header {
+        flex-flow: column nowrap;
+    }
+    .primary-nav {
+        font-size: 13px;
+    }
+    .nav li {
+        margin: 0 5px;
+    }
 }
