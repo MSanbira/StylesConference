@@ -297,10 +297,6 @@ primary header
     font-size: 14px;
 }
 
-.footer-flex {
-    display: flex;
-}
-
 /*
   ========================================
   Navigation
@@ -557,6 +553,7 @@ table h4 {
     .row {
         min-width: 0;
         width: 400px;
+        padding-top: 15px;
     }
     .grid {
         width: auto;
@@ -565,24 +562,48 @@ table h4 {
         font-size: 16px;
     }
     h5 {
-        font-size: 8px;
+        font-size: 11px;
     }
     .logo {
         font-size: 42px;
-        text-align: center;
         margin: 0;
     }
     .tagline {
         margin: 15px 0 15px 0;
-        text-align: center;
+        text-align: left;
     }
     .primary-header {
         flex-flow: column nowrap;
+        padding-bottom: 15px;
     }
     .primary-nav {
         font-size: 13px;
     }
     .nav li {
         margin: 0 5px;
+    }
+    .hero {
+        padding: 30px;
+    }
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+        text-align: left;
+    }
+    .hero p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .btn-alt{
+        width: 100%;
+    }
+    .teaser{
+        margin-bottom: 30px;
+    }
+    .teaser:last-child{
+        margin-bottom: 0;
     }
 }
