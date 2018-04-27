@@ -542,7 +542,7 @@ table h4 {
         flex-flow: column nowrap;
     }
     .container {
-        width: 400px;
+        width: auto;
         padding-right: 15;
         padding-left: 15;
     }
@@ -552,7 +552,7 @@ table h4 {
     }
     .row, .row-alt {
         min-width: 0;
-        width: 400px;
+        width: auto;
         padding-top: 15px;
     }
     .row-alt {
@@ -580,13 +580,19 @@ table h4 {
         padding-bottom: 15px;
     }
     .primary-nav {
-        font-size: 13px;
+        font-size: 12px;
+    }
+    .nav {
+        text-align: left;
     }
     .nav li {
-        margin: 0 5px;
+        margin: 0 10px 0 0;
+    }
+    .nav li:last-child {
+        margin-right: 0;
     }
     .hero {
-        padding: 30px;
+        padding: 0 30px 30px 30px;
     }
     .hero h2 {
         font-size: 28px;
@@ -603,16 +609,15 @@ table h4 {
     .btn-alt, .btn-default {
         width: 100%;
     }
-    .teaser{
+    .teaser {
         margin-bottom: 30px;
     }
-    .teaser:last-child{
+    .teaser:last-child {
         margin-bottom: 0;
     }
     .lead {
         text-align: left;
     }
-    
     .lead p {
         font-size: 21px;
         line-height: 28px;
@@ -621,7 +626,6 @@ table h4 {
         font-size: 16px;
         font-weight: 400;
     }
-    
     th {
         padding-right: 15px;
     }
