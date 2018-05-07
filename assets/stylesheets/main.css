@@ -228,7 +228,6 @@ home
 */
 
 .hero {
-    color: #fff;
     padding: 22px 80px 66px 80px;
     line-height: 44px;
     text-align: center;
@@ -236,9 +235,11 @@ home
 
 .hero h2 {
     font-size: 36px;
+    color: #648880;
 }
 
 .hero p {
+    color: #fff;
     font-size: 24px;
     font-weight: 100;
 }
@@ -536,13 +537,46 @@ table h4 {
   ========================================
 */
 
-@media (max-width: 400px) {
+@media (max-width: 960px) {
+    .container, .grid {
+        width: 100%;
+    }
+    .row, .row-alt {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    h3 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 11px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    .primary-nav {
+        font-size: 12px;
+    }
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+    .hero p {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 650px) {
     .primary-flex {
         display: flex;
         flex-flow: column nowrap;
     }
     .container {
-        width: auto;
         padding-right: 15;
         padding-left: 15;
     }
@@ -550,22 +584,11 @@ table h4 {
         display: block;
         flex-basis: 100%;
     }
-    .row, .row-alt {
-        min-width: 0;
-        width: auto;
+    .row {
         padding-top: 15px;
     }
     .row-alt {
         padding-top: 30px;
-    }
-    .grid {
-        width: auto;
-    }
-    h3 {
-        font-size: 16px;
-    }
-    h5 {
-        font-size: 11px;
     }
     .logo {
         font-size: 42px;
@@ -578,9 +601,6 @@ table h4 {
     .primary-header {
         flex-flow: column nowrap;
         padding-bottom: 15px;
-    }
-    .primary-nav {
-        font-size: 12px;
     }
     .nav {
         text-align: left;
@@ -595,14 +615,9 @@ table h4 {
         padding: 0 30px 30px 30px;
     }
     .hero h2 {
-        font-size: 28px;
-        margin-bottom: 22px;
         text-align: left;
     }
     .hero p {
-        font-size: 21px;
-        font-weight: 300;
-        line-height: 28px;
         text-align: left;
         margin-bottom: 30px;
     }
